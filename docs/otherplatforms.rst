@@ -64,24 +64,6 @@ An art streaming website with free multistreams, free recordings and timelapses,
      - Adds a creator to your list to announce when Live.
 
 -----
-Steam
------
-
-The Steam Broadcasting feature has been live since 2015 and used to announce some main events such as the 2018 Dota 2 tournament.
-This was a fairly straightforward integration so MattTheDev made it happen!
-
-.. list-table:: Steam Commands
-   :widths: 25 25 50
-   :header-rows: 1
-
-   * - Name
-     - Example
-     - Usage
-   * - steam
-     - ``!cb steam MattTheDev #discord-channel``
-     - Adds a creator to your list to announce when Live.
-
------
 Trovo
 -----
 
