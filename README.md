@@ -15,7 +15,7 @@
   <a href="https://www.patreon.com/CouchBot">
     <img src="https://img.shields.io/badge/Support-CouchBot!-blueviolet.svg" alt="Support CouchBot on Patreon!">
   </a>
-  <a href='https://couchbot-support-german.readthedocs.io/en/latest/?badge=latest'>
+  <a href='https://docs-de.couch.bot/en/latest/?badge=latest'>
       <img src='https://readthedocs.org/projects/couchbot-support-german/badge/?version=latest' alt='Documentation Status' />
   </a>
 </p>
