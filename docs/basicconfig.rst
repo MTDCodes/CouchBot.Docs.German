@@ -1,95 +1,91 @@
 .. _basicconfig:
 
 ===================
-Basic Configuration
+Grundlegende Konfiguration
 ===================
 
 -------------
-Assign Admins
+Admins hinzufügen
 -------------
 
-.. note:: These commands are toggled, if you want to remove a person/group from the list, run the command again.
+.. note:: All diese Befehle sind ein/aus Schalter. Wenn du eine Person/eine Gruppe von der Liste entfernen möchtest führe einfach den entsprechenden Befehl ein zweites Mal aus.
 
-In order for people to manually add and remove content creators to the bot, they must be on the **Approved Admin List**.
-They can either be added by role or by individual user, see examples below on how to configure this;
+Nur Personen, die in der **Admin Liste** sind können Content Creators manuell zum Bot hinzufügen oder entfernen. Admins können entweder über Rollen oder als individuelle User zugewiesen werden. Beispiele für die Verwendung findest du hier:
 
 .. list-table::
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - admin
      - ``!cb admin @MattTheDev#0001``
-     - Adds an individual to admin.
+     - Fügt einen individuellen User als Admin hinzu.
    * - admin
      - ``!cb admin @Developers``
-     - Adds a role to administrate the bot.
+     - Fügt eine Rolle als Admin hinzu.
    * - admin list
      - ``!cb admin list``
-     - Provides a list of the configured bot admins
+     - Zeigt eine Liste der Bot Admins an.
 
 ----------------
-Allowed Settings
+Erlaubte Einstellungen
 ----------------
 
-In order to run the bot effectively, you must tell it what you wish it to do.
-An example of this can be to announce published videos only or to greet people joining your server.
-Some of these settings are necessary for other areas to function such as the **Allow Live/Published** command.
+Um den Bot effektiv verwenden zu können musst du ihm mitteilen, was genau er tun soll. Beispiele dafür wären etwa veröffentlichte Videos anzukündigen oder neue Leute, die deinem Server beitreten, zu begrüßen. Einige dieser Einstellungen, wie beispielsweise der **Allow Live/Published** Befehl, sind notwendig, damit andere Teile des Bots funktionieren.
 
 ~~~~~~~~~~~~~~~~
 Live & Published
 ~~~~~~~~~~~~~~~~
 
-.. Caution:: If you fail to set either of these the bot will announce no-one.
+.. Caution:: Wenn nicht zumindest eine dieser Einstellungen aktiviert wird, wird der Bot garnichts ankündigen.
 
-Use the following commands to configure whether the bot should announce live and/or published content.
-If you choose not to enable either of these then the bot will in effect, not announce anything.
+Die folgenden Befehle konfigurieren, ob der Bot live und / oder veröffentlichten Content ankündigen soll. Wenn du nicht zumindest eine dieser Einstellungen aktivierst wird der Bot keine Ankündigungen posten.
 
-.. note:: The following variables are available to use in the **Live** and **Published** messages.
+.. note:: Die folgenden Variablen sind sowohl in Nachrichten für **live** und **veröffentlichte** Benachrichtigungen verfügbar:
 .. code-block:: none
 
-    %TITLE% - Name of the Stream
-    %GAME% - Not working for YouTube
-    %CHANNEL% - Channel Name
-    %URL% - Full URL of the Stream
+    %TITLE% - Name des Streams
+    %GAME% - Funktioniert nicht für YouTube
+    %CHANNEL% - Name des Kanals
+    %URL% - Vollständige URL des Streams
 
 .. list-table:: Live
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - allow live
      - ``!cb allow live``
-     - Toggles allowing stream announces for live streamers.
+     - Aktiviert/Deaktiviert die Funktionen für die Ankündigungen von live Streamern.
    * - message live
-     - ``!cb message live "Your Custom Live Message"``
-     - Changes your live message for the server.
+     - ``!cb message live "Deine individuelle live Benachrichtigung."``
+     - Legt die standard live Benachrichtigung für den Server fest.
 
 .. list-table:: Published
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - allow published
      - ``!cb allow published``
-     - Toggles allowing published videos to be announced.
+     - Aktiviert/Deaktiviert die Funktionen für die Ankündigungen von veröffentlichten Videos.
    * - message published
-     - ``!cb message published "Your Custom VOD Message"``
-     - Changes your VOD message for the server.
+     - ``!cb message published "Deine individuelle VOD Benachrichtigung."``
+     - Legt die standard VOD Benachrichtigung für den Server fest.
 
 ~~~~~~~~~~~~~~~~~~~~
-Greetings & Goodbyes
+Begrüßungen & Verabschiedungen
 ~~~~~~~~~~~~~~~~~~~~
 
-These commands allow you to enable the greeting/goodbye function of CouchBot, this will trigger when people join/leave your server.
+Diese Befehle erlauben es dir die Begrüßungs/Verabschiedungs Funktionen von CouchBot zu aktivieren, die ausgelöst werden, wenn neue Mitglieder deinem Server beitreten oder ihn verlassen.
 
-.. note:: The following variables are available to use in this location.
+.. note:: Die folgenden Variablen können hier benutzt werden:
 .. code-block:: none
 
     %USER%
@@ -100,50 +96,50 @@ These commands allow you to enable the greeting/goodbye function of CouchBot, th
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - allow greetings
      - ``!cb allow greetings``
-     - Toggle allowing greetings when a member joins the server.
+     - Aktiviert/Deaktiviert Begrüßungen wenn eine neue Userin dem Server beitritt.
    * - channel greetings
      - ``!cb channel greetings #discord-channel``
-     - Sets the greeting channel.
+     - Legt den Kanal für die Begrüßungs Nachrichten fest.
    * - message greeting
-     - ``!cb message greeting "Your Custom Greeting Message"``
-     - Changes your greeting message for the server.
+     - ``!cb message greeting "Deine individuelle Begrüßungs Nachricht."``
+     - Legt die Begrüßungs Nachricht für den Server fest.
 
 .. list-table:: Goodbyes
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - allow goodbyes
      - ``!cb allow goodbyes``
-     - Toggle allowing goodbyes when a member leaves the server.
+     - Aktiviert/Deaktiviert Verabschiedungen wenn ein User den Server verlässt.
    * - channel goodbyes
      - ``!cb channel goodbyes #discord-channel``
-     - Sets the goodbye channel.
+     - Legt den Kanal für die Verabschiedungs Nachrichten fest.
    * - message goodbye
-     - ``!cb message goodbye "Your Custom Goodbye Message"``
-     - Changes your goodbye message for the server.
+     - ``!cb message goodbye "Deine individuelle Verabschiedungs Nachricht."``
+     - Legt die Verabschiedungs Nachricht für den Server fest.
 
 ----------------------
-Miscellaneous Settings
+Sonstige Einstellungen
 ----------------------
 
-There are a few other settings available within **CouchBot** to allow a more customised and cleaner setup.
+Einige weitere Einstellungen von **CouchBot** ermöglichen ein individuelleres und saubereres Setup.
 
-The following settings change the apperance of the embed message;
+Die folgenden Einstellungen verändern das Aussehen der eingebetteten Nachrichten:
 
-.. list-table:: Additional Embed Settings
+.. list-table:: Zusätzliche Einstellungen der eingebetteten Nachrichten 
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - allow thumbnails
      - ``!cb allow thumbnails``
-     - Adds an image to the bottom of the embed from the stream.
+     - Fügt der eingebetteten Nachricht des Streams ein Vorschaubild hinzu.
