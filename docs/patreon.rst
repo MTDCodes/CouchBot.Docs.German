@@ -1,29 +1,29 @@
 .. _patreon:
 
-================
-Patreon Commands
-================
+===============
+Patreon Befehle
+===============
 
-In order to have CouchBot stay on your server, you will need to sign up to :ref:`Patreon <requirements>` and **Whitelist** your server.
-`Click here to see how to get your ServerID. <https://support.discordapp.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID->`_
-To do this follow the guide below;
+Um CouchBot auf deinem Server verwenden zu können musst du dich bei :ref:`Patreon <requirements>` anmelden und deinen Server **whitelisten**. 
+`Klicke hier um zu erfahren wie du deine ServerID ermitteln kannst. <https://support.discordapp.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID->`
+Folge anschließend der untenstehenden Anleitung.
 
-.. note:: These commands are applicable only to people who have an active **Patreon** subscription.
+.. note:: Diese Befehle funktionieren nur für User die eine aktives **Patreon** Abo haben.
 
-+----------------------+----------------------------------------+----------------------------------------+
-| Name                 | Example                                | Usage                                  |
-+----------------------+----------------------------------------+----------------------------------------+
-| patreon              | ``!cb patreon``                        | Shows you allowance and servers added. |
-+----------------------+----------------------------------------+----------------------------------------+
-| patreon addserver    | ``!cb patreon addserver 123456789``    | Adds a server to your account.         |
-+----------------------+----------------------------------------+----------------------------------------+
-| patreon removeserver | ``!cb patreon removeserver 123456789`` | Removes a server from your account.    |
-+----------------------+----------------------------------------+----------------------------------------+
++----------------------+----------------------------------------+---------------------------------------------------+
+| Name                 | Beispiel                               | Verwendung                                        |
++----------------------+----------------------------------------+---------------------------------------------------+
+| patreon              | ``!cb patreon``                        | Zeigt deine Serverslots und verbundene Server an. |
++----------------------+----------------------------------------+---------------------------------------------------+
+| patreon addserver    | ``!cb patreon addserver 123456789``    | Fügt einen neuen Server zu deinem Account hinzu.  |
++----------------------+----------------------------------------+---------------------------------------------------+
+| patreon removeserver | ``!cb patreon removeserver 123456789`` | Entfernt einen Server von deinem Account.         |
++----------------------+----------------------------------------+---------------------------------------------------+
 
-The command(s) below is only applicable to specific Patreon tiers;
+Die folgenden Befehle stehen nur Benutzern mit speziellen Patreon Tier-Leveln zur Verfügung.
 
-+------+------------------------------------+----------------------------------------------------+
-| Name | Example                            | Usage                                              |
-+------+------------------------------------+----------------------------------------------------+
-| ping | ``!cb ping Look at my cool ping!`` | Sets your ping response to "Look at my cool ping!" |
-+------+------------------------------------+----------------------------------------------------+
++------+------------------------------------------+----------------------------------------------------------------+
+| Name | Beispiel                                 | Verwendung                                                     |
++------+------------------------------------------+----------------------------------------------------------------+
+| ping | ``!cb ping Seht meinen coolen Ping an!`` | Legt deine Ping antwort auf "Seht meinen coolen Ping an!" fest.|
++------+------------------------------------------+----------------------------------------------------------------+
