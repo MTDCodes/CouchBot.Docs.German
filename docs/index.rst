@@ -1,39 +1,39 @@
-Welcome to CouchBot's documentation!
+Willkommen zur Dokumentation von CouchBot!
 =============================================
 
 ========
-Overview
+Überblick
 ========
 
-You've seen other bots like this I'm sure - Have Discord server, setup bot, bot announces when you go live. But do other bots have loose springs? Maybe a nacho cheese stain or two? And what is that smell..?? Yes, that is unique.
+Ich bin mir sicher, du hast änliche Bots wie diesen hier schon mal gesehen - Du hast einen Discord Server, holst dir einen Bot, der Bot meldet, wenn dein Stream live geht. Aber haben diese Bots quietschende Federn? Nacho-Flecken? Und diesen eigenwilligen Geruch? Jup, das ist es, was CouchBot zu etwas besonderem macht!
 
-===============
-Getting Started
-===============
+========
+Einstieg
+========
 
 **Quick Start**
 
-You can jump straight into the `Requirements <https://patreon.com/CouchBot>`__
+Hier findest du die `Voraussetzungen <https://patreon.com/CouchBot>`__
 
-**CouchBot's main feature set includes:**
+**Die Hauptfeatures von CouchBot beinhalten:**
 
-- Stream Announcing (across all major streaming platforms)
-- Role Hoisting
-- Greeting/Welcome Message (fully configurable)
-- Custom Live Messages (Glimesh, Mobcrush, Picarto, Piczel, Trovo, Theta, Twitch, & YouTube)
-- Beautiful Embeds
-- VOD Publishing
-- Seperate announcements for owners!
-- Automatic Twitch announcements when going live
-- Can configure the offline message or delete the announcement once finished!
+- Stream Ankündigungen (für alle großen Streaming Plattformen)
+- Rollen Verwaltung
+- Begrüßungs-/Verabschiedungsnachrichten (vollständig konfigurierbar)
+- Individuelle Live Nachrichten (Glimesh, Mobcrush, Picarto, Piczel, Trovo, Theta, Twitch, & YouTube)
+- Hübsche eingebettete Nachrichten
+- VOD Veröffentlichungen
+- Eigene Benachrichtigungen für Serverbesitzer!
+- Automatische Twitch Benachrichtigungen wenn ein User live geht
+- Die Offline-Nachricht kann konfiguriert werden oder die Ankündigung nach beendetem Stream gelöscht werden!
 
-===================
-Platforms Supported
-===================
+========================
+Unterstützte Plattformen
+========================
 
-Let your Discord community know when you go live! 
-Want to let your friends know when you publish a new YouTube Video? 
-Want to make a list of your favorite streamers, and get notified when they go live? CouchBot does that too!
+Benachrichtige deine Discord Community wenn du live gehst!
+Möchtest du deine Freunde informieren wenn du ein neues YouTube Video veröffentlichst?
+Möchtest du eine Liste deiner Lieblings-Streamer anlegen und benachrichtigt werden, wenn sie live gehen? Für CouchBot kein Problem!
 
 - `Glimesh <https://glimesh.tv>`__
 - `Picarto <https://picarto.tv>`__
