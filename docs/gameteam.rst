@@ -1,43 +1,43 @@
 .. _gameteam:
 
-=============
-Games & Teams
-=============
+==============
+spiele & Teams
+==============
 
-.. note:: These commands are toggled, if you want to remove something from the list, run the command again.
+.. note:: All diese Befehle sind ein/aus Schalter. Wenn du eine Person/eine Gruppe von der Liste entfernen möchtest führe einfach den entsprechenden Befehl ein zweites Mal aus.
 
-**CouchBot** can alert you when members of a specific stream team have gone live. For developers, we even have the game announcmenet feature allowing 
-anyone playing a particular game to be announced.
+**CouchBot** kann Benachrichtigungen verschicken, wenn Mitglieder eines bestimmten Streamer Teams live gehen. Eine für Entwickler eventuell interessante Funktion ist die Spiele-Benachrichtigung die es ermöglich Benachrichtigungen zu posten wann immer ein Content Creator gerade ein bestimmtes Spiel im Stream spielt.
 
-If you have a game or want to announce a game, then use the following settings.
+Wenn du ein Spiele-Entwickler bist oder Benachrichtigungen für ein Spiel aktivieren möchtest benutz die folgenden Einstellungen:
 
-.. list-table:: Game Commands
+.. list-table:: Spiele Befehle
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - game
      - ``!cb game "Last Epoch" #discord-channel``
-     - Toggles adding a game to the creators list.
+     - Fügt ein Spiel der Spieleliste hinzu.
    * - game list
      - ``!cb game list``
-     - Displays a list of added games.
+     - Zeigt die Liste der hinzugefügten Spiele an.
 
-If you have a team or want to announce a team, then use the following settings.
-An example is the **sutv** channel on Twitch.
 
-.. list-table:: Team Commands
+Wenn du zu einem Team gehörst oder Benachrichtigungen für ein Team aktivieren möchtest benutz die folgenden Einstellungen:
+Als Beispiel wird hier der **sutv** Team Channel auf Twitch verwendet.
+
+.. list-table:: Team Befehle
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - team
      - ``!cb team twitch sutv #discord-channel``
-     - Toggles adding a team to the creators list.
+     - Fügt ein Team der Teamliste hinzu.
    * - team list
      - ``!cb team list``
-     - Displays a list of added teams.
+     - Zeigt die Liste der hinzugefügten Teams an.
