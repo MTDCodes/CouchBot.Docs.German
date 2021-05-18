@@ -4,8 +4,8 @@
 Patreon Befehle
 ===============
 
-Um CouchBot auf deinem Server verwenden zu können musst du dich bei :ref:`Patreon <requirements>` anmelden und deinen Server **whitelisten**. 
-`Klicke hier um zu erfahren wie du deine ServerID ermitteln kannst. <https://support.discordapp.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID->`
+Um CouchBot auf deinem Server verwenden zu können musst du dich bei :ref:`Patreon <requirements>` anmelden und deinen Server **freischalten**. 
+`Klicke hier um zu erfahren wie du deine ServerID ermitteln kannst. <https://support.discord.com/hc/de/articles/206346498-Wie-finde-ich-meine-Server-ID->`_
 Folge anschließend der untenstehenden Anleitung.
 
 .. note:: Diese Befehle funktionieren nur für User die eine aktives **Patreon** Abo haben.
