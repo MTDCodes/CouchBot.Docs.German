@@ -1,29 +1,28 @@
 .. _customannouncements:
 
-====================
-Custom Announcements
-====================
+===============================
+Individuelle Benachrichtigungen
+===============================
 
-.. caution:: Please ensure you have read through the :ref:`Basic Config <basicconfig>` before moving to this section
-             This avoids issues such as the bot not announcing anyone.
+.. caution:: Stelle bitte sicher, dass du die :ref:`Grundlegende Konfiguration <basicconfig>` gelesen hast, bevor du mit diesem Abschnitt weitermachst.
+             Damit kannst du verhindern, dass der Bot beispielsweise keine Stream-Benachrichtigungen ankündigt.
 
-A common request was to allow different creators to be announced in different channels with different role ping settings.
-Whilst we could theoretically do this it was decided to partly bring this into play within CouchBot.
-Rather than hardcode in additional commands for pinging people, we allow you to edit the message when someone goes live allowing you to ping
-whatever role/person you choose.
+Ein häufige Anfrage war es eine Möglichkeit zu schaffen, dass unterschiedliche Content Creators in unterschiedlichen Kanälen mit unterschiedlichen Rollen-Benachrichtigungs Einstellungen angekündigt werden können.
+Wenn dies auch theoretisch machbar gewesen wäre wurde letztendlich entschieden eine etwas andere Lösung für CouchBot zu finden, die zum gleichen Ergebnis führt.
+Anstatt zusätzliche Befehle für unterschiedliche Benachrichtigungen zu schreiben erlaubt couchBot es die Nachricht, mit der Angekündigt wird, dass jemand live geht, zu bearbeiten und in dieser Nachricht individuelle Personen und/oder Rollen zu pingen.
 
-**The format for this is the same across all streaming platform that CouchBot announces.**
+**Das Format für die Benachrichtigungen ist über alle Streaming Plattformen die CouchBot ankündigt das selbe.**
 
-When adding a creator you would specify the custom message at the same time;
+Wenn du einen Content Creator hinzufügst legst du gleichzeitig auch die entsprechende individuelle Benachrichtigung fest.
 
-**e.g.** ``!cb twitch MattTheDev #discord-channel "The Developer of **CouchBot** has gone live!"``
+**z.B.:** ``!cb twitch MattTheDev #discord-channel "Der Entwickler von **CouchBot** ist gerade live!"``
 
-Editing the message is as simple as running the command again with the new message to be announced.
+Um die Benachrichtigung zu bearbeiten führe den Befehl einfach nochmal mit der neuen, überarbeiteten Benachrichtigung aus.
 
-.. note:: The following variables are available to use in the **Live** and **Published** messages.
+.. note:: Die folgenden Variablen sind sowohl in Nachrichten für **live** und **veröffenltichte** Benachrichtigungen verfügbar:
 .. code-block:: none
 
-    %TITLE% - Name of the Stream
-    %GAME% - Not working for YouTube
-    %CHANNEL% - Channel Name
-    %URL% - Full URL of the Stream
+    %TITLE% - Name des Streams
+    %GAME% - Funktioniert nicht für YouTube
+    %CHANNEL% - Name des Kanals
+    %URL% - Vollständige URL des Streams
