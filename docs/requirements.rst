@@ -1,10 +1,10 @@
 .. _requirements:
 
-In order to have **CouchBot** in your server, you should follow these instructions;
+Damit **CouchBot** auf deinem Server funktioniert befolge bitte folgende Anweisungen:
 
-#. Sign up to CouchBot on `Patreon <https://patreon.com/CouchBot>`__
-#. Link Patreon to your Discord account.
-#. Join the `Support Server <https://discord.couch.bot>`__ to whitelist your active servers.
+#. Melde dich für Couchbot bei  `Patreon <https://patreon.com/CouchBot>`__ an.
+#. Verknüpfe Patreon mit deinem Discord Konto.
+#. Tritt dem `Support Server <https://discord.couch.bot>`__ bei um deine aktiven Server freizuschalten.
 
 
-.. note:: You must have the **Manage Server** permission to invite **CouchBot** to a server.
+.. note:: Du benötigst die **Server verwalten** Berechtigung um **CouchBot** zu einem Server einladen zu können.
