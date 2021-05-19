@@ -1,28 +1,29 @@
 .. _filtering:
 
-=========
-Filtering
-=========
+======
+Filter
+======
 
-.. note:: These commands are toggled, if you want to remove something from the list, run the command again.
+.. note:: All diese Befehle sind ein/aus Schalter. Wenn du etwas von der Liste entfernen möchtest führe einfach den entsprechenden Befehl ein zweites Mal aus.
 
-**CouchBot** has the ability to filter announcements to specific games, stream titles.
-This will only allow items mentioned on this list to be announced regardless of what creators you may have added.
-An example being if someone played Destiny 2 they would never be announced in the following examples.
+**CouchBot** ermöglicht das Filtern von spezifischen Spielen oder Stream Titeln.
+Dadurch werden von allen hinzugefügten Content Creators nur Streams angekündigt, die ein Spiel oder einen Titel beinhalten, der auf der Filterliste steht.
+Würde beispielsweise jemand Destiny 2 spielen würden diese Streams im folgenden Beispiel nicht angekündigt werden.
 
-.. list-table:: Filter Commands
+.. list-table:: Filter Befehle
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - filter game
      - ``!cb filter game twitch "World of*"``
-     - Creates a **Game Filter** on Twitch for any games starting with "World of"
+     - Erstellt auf Twitch einen **Spiele Filter** für alle Spiele die mit "World of" beginnen.
    * - filter title
      - ``!cb filter title twitch "World of*"``
-     - Creates a **Stream Title Filter** on Twitch for any titles starting with "World of"
+     - Erstellt auf Twitch einen **Stream Titel Filter** für alle Titel die mit "World of" beginnen.
    * - filter list
      - ``!cb filter list``
-     - Displays a list of the current applicable filters.
+     - Zeigt eine Liste aller aktuell aktiven Filter an.
+	 
