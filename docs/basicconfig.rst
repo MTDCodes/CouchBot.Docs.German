@@ -91,7 +91,7 @@ Diese Befehle erlauben es dir die Begrüßungs/Verabschiedungs Funktionen von Co
     %USER%
     %RANDOMUSER%
 
-.. list-table:: Greetings
+.. list-table:: Begrüßungen
    :widths: 25 25 50
    :header-rows: 1
 
@@ -108,7 +108,7 @@ Diese Befehle erlauben es dir die Begrüßungs/Verabschiedungs Funktionen von Co
      - ``!cb message greeting "Deine individuelle Begrüßungs Nachricht."``
      - Legt die Begrüßungs Nachricht für den Server fest.
 
-.. list-table:: Goodbyes
+.. list-table:: Verabschiedungen
    :widths: 25 25 50
    :header-rows: 1
 
