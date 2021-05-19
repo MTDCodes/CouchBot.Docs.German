@@ -4,40 +4,40 @@
 Twitch Setup
 ============
 
-.. caution:: Please ensure you have read through the :ref:`Basic Config <basicconfig>` before moving to this section
-             This avoids issues such as the bot not announcing anyone.
+.. caution:: Stelle bitte sicher, dass du die :ref:`Grundlegende Konfiguration <basicconfig>` gelesen hast, bevor du mit diesem Abschnitt weitermachst.
+             Damit kannst du verhindern, dass der Bot beispielsweise keine Stream-Benachrichtigungen ankündigt.
 
-Twitch is by far the most popular streaming platform in the world at the time of this writing.
-Being the market leader, it has some integrations which make announcing in Discord much easier to setup en mass.
+Zum Zeitpunkt des Erstellens dieser Dokumentaton its Twitch die bei weitem populärste Streaming Plattform.
+Als Marktführer hat Twitch daher einige Integrationen, die das Einrichten von Benachrichtigungen in Discord en masse einfacher machen.
 
 ---------------
 Live Discovery
 ---------------
 
-.. DANGER:: This requires that there is **No Custom Status** set and the person streaming has the "**Purple Dot**"
+.. DANGER:: Hierfür ist es notwendig, dass in Discord **kein personalisierter Status** gesetzt ist und bei der Streamerin in Discord der **lila Punkt** zu sehen ist.
 
-**CouchBot** has the ability to **automatically discover** people in your Discord server that are streaming to **Twitch**.
-This is done via the purple "*Streaming*" indicator on a persons profile when they stream using OBS or similar triggering *Streamer Mode* on Discord.
+**CouchBot kann Personen, die in deinem Discord Server sind und auf **Twitch** streamen **automatisch zu erkennen.**
+Das wird anhand des lila "*Streaming*" Indikators ermöglicht, der beim Profil einer Person aufscheint, wenn diese mittels OBS oder anderer Software streamed und den *Streamer Modus* aktiviert hat.
 
-The following table shows the only steps needed to configure this for immediate use in your server;
+Die folgende Tabelle zeigt die Befehle die notwendig sind, um diese Funktion sofort in deinem Server nutzen zu können:
 
-.. list-table:: Basic Live Discovery Setup
+.. list-table:: Grundlegendes Live Discovery Setup
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - channel live
      - ``!cb channel live #discord-channel``
-     - This channel will be where Discovery announcements go.
+     - Dies liegt den Kanal fest, in welchen Live Discovery Benachrichtigungen geschickt werden.
    * - allow livediscovery
      - ``!cb allow livediscovery all``
-     - Allows the automatic announcing of people with the status of “Streaming”.
+     - Erlaubt dass automatisch Benachrichtigungen geschickt werden, wenn eine Person den Discord Sreamer Modus aktiviert.
 
-You can also limit the people that will be announced using assigned roles or you can switch this feature off completely;
+Du kannst mittels Rollen auch einschränken, für welche Personen Benachrichtigungen erstellt werden oder dieses Feature vollständig deaktivieren.
 
-.. list-table:: Advanced Live Discovery Setup
+.. list-table:: Fortgeschrittenes Live Discovery Setup
    :widths: 25 25 50
    :header-rows: 1
 
@@ -46,45 +46,47 @@ You can also limit the people that will be announced using assigned roles or you
      - Usage
    * - allow livediscovery
      - ``!cb allow livediscovery none``
-     - Prevents the automatic announcing of people with the status of “Streaming”.
-   * - allow livediscovery
+     - Verhindert dass automatische Benachrichtigungen geschickt werden, wenn eine Person den Discord Streamer Modus aktiviert.
+	    * - allow livediscovery
      - ``!cb allow livediscovery role @Streamer`` 
-     - Allows the automatic announcing of people with the status of “Streaming” and the role of @Streamer.
+     - Erlaubt dass automatisch Benachrichtigungen geschickt werden, wenn eine Person den Discord Sreamer Modus aktiviert und die Rolle @Streamer hat.
+	 
 
-Finally, Live Discovery also allows you to assign a "**Live Now**" type role to creators allowing you to hoist them to show current
-live users in your server. The role will only be added when they are **Live** then **Removed** when they are finished automatically.
-The command for this feature is as follows;
+Zu guter Letzt ermöglicht es dir Live Discovery, Content Creators eine "**Jetzt Live**" Rolle zuzuweisen, die sie in der Benutzerliste 
+deines Servers hervorhebt. Diese Rolle wird nur hinzugefügt, wenn ein Streamer **live** ist und automatisch wieder **entfernt** wenn der Stream beendet wurde.
+Der Befehl dafür lautet wie folgt:
 
-.. list-table:: Live Discovery Roles Setup
+.. list-table:: Live Discovery Rollen Setup
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - role live
      - ``!cb role live @RoleTheyGet``
-     - The role that gets **assigned** to a person when they go live.
+     - Diese Rolle wird für die Zeit des Livestreams **hinzugefügt.**
 
------------------------
-Manually Add Creator(s)
------------------------
+-----------------------------------
+Content Creators manuell hinzufügen
+-----------------------------------
 
-Manually adding creators allows a fine grained level of control over who is announed in your server and allows things such as custom announcements and channels
-to be selected giving much more options on who should be announced and where.
-This is particularly useful on a creators server where they may want to use **@here** to announce when they are live but not for anyone else.
+Das manuelle Hinzufügen von Content Creators erlaubt detailierte Kontrolle darüber, wessen Streams in deinem Server angekündigt werden, in welchen Kanälen 
+und mit welchen Nachrichten. 
+Das ist besonders in den Servern von Content Creators nützlich, die nur ihre eigenen Streams mit **@here** ankündigen wollen, andere Streams jedoch etwas subtiler.
 
-For more information on custom messages please see :ref:`Custom Announcements <customannouncements>`
+Nähere Informationen zu individualisierten Benachrichtigungen findest du unter :ref:`Individuelle Benachrichtigungen <customannouncements>`
 
-.. Important:: To remove a creator, run the command again!
+.. Important:: Um einen Content Creator zu entfernen führe den Befehl ein zweites Mal aus.
+To remove a creator, run the command again!
 
 .. list-table:: Manual Twitch Setup
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - twitch
      - ``!cb twitch MattTheDev #discord-channel``
-     - Adds a creator be announced
+     - Fügt einen Content Creator zur Liste der anzukündigenden Streamer hinzu.
