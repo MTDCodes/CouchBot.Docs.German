@@ -4,56 +4,56 @@
 YouTube Setup
 =============
 
-.. caution:: Please ensure you have read through the :ref:`Basic Config <basicconfig>` before moving to this section
-             This avoids issues such as the bot not announcing anyone.
+.. caution:: Stelle bitte sicher, dass du die :ref:`Grundlegende Konfiguration <basicconfig>` gelesen hast, bevor du mit diesem Abschnitt weitermachst.
+             Damit kannst du verhindern, dass der Bot beispielsweise keine Stream-Benachrichtigungen ankündigt.
 
-YouTube has the unique ability to indefinently store your Live Streams to VOD as well as upload your own content without the need to be Live at all.
-**CouchBot**, in turn, will allow you to announce Live, VOD and/or both to your Discord servers!
+Auf YouTube hochgeladene Live Streams werden unbegrenzt lange als VODs gespeichert. Auch können hier Videos hochgeladen werden, ohne überhaupt live zu gehen.
+**CouchBot** erlaubt es dir, sowohl Live Content als auch VODs - oder auch beides - in deinem Discord Server anzukündigen!
 
-.. Important:: To remove a creator, run the command again!
+.. Important:: Um einen Content Creator zu entfernen führe den Befehl ein zweites Mal aus.
 
-.. Caution:: To get your YouTube Channel ID see `this guide <https://youtube.com/account_advanced>`_.
-             It's 24 characters long and starts with UC.
-             Alternatvely, use the ``!cb ytidlookup`` command.
+.. Caution:: Um deine YouTube Kanal ID herauszufinden, folge bitte `dieser Anleitung <https://youtube.com/account_advanced>`_.
+             Die ID besteht aus 24 Zeichen und beginnt mit UC.
+			 Alternativ kannst du auch den Befehl ``!cb ytidlookup`` benutzen.
 
 --------------
 Live Streaming
 --------------
 
-Unlike other platforms, YouTube uses a Channel ID as the unique identifier for links and as such you need to know this when adding a
-creator to CouchBot.
+Im Gegensatz zu anderen Plattformen benutzt YouTube eine Kanal ID als den einzigartigen Identifikator für Links, weshalb es notwendig ist
+dass du diese ID kennst, wenn du einen Content Creator zu CouchBot hinzufügst.
 
 .. list-table:: Live Streaming
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - youtube
      - ``!cb youtube UC1VkELEdx28lgBg_MBkfcwQ #discord-channel live``
-     - Adds a creator to your list to announce when Live.
+     - Fügt eine Content Creatorin zur Liste der Userinnen hinzu, deren Live Streams angekündigt werden sollen.
    * - youtube
      - ``!cb youtube UC1VkELEdx28lgBg_MBkfcwQ #discord-channel both``
-     - Adds a creator to your list to announce when Live and/or Published.
+     - Fügt einen Content Creator zur Liste der User hinzu, deren Live Streams und/oder veröffentlichte Videos angekündigt werden sollen.
 
-----------------
-Published Videos
-----------------
+----------------------
+Veröffentlichte Videos
+----------------------
 
-YouTube is known for it's Video content moreso than the Live content it also offers.
-To announce when a creator has uploaded a video you would use the following command;
+YouTube ist eher für den Video-Content als für den Live-Content bekannt, der auf der Plattform angeboten wird.
+Um anzukündigen, wenn eine Content Creatorin ein Video veröffentlich hat benutze bitte folgenden Befehl:
 
-.. list-table:: Published Videos
+.. list-table:: Veröffentlichte Videos
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - youtube
      - ``!cb youtube UC1VkELEdx28lgBg_MBkfcwQ #discord-channel vod``
-     - Adds a creator to your list to announce when a video is published.
+     - Fügt einen Content Creator zur Liste der User hinzu, deren veröffentlichte Videos angekündigt werden sollen.
    * - youtube
      - ``!cb youtube UC1VkELEdx28lgBg_MBkfcwQ #discord-channel both``
-     - Adds a creator to your list to announce when Live and/or Published.
+     - Fügt eine Content Creatorin zur Liste der Userinnen hinzu, deren Live Streams und/oder veröffentlichte Videos angekündigt werden sollen.
