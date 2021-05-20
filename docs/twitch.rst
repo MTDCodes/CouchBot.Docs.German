@@ -16,7 +16,7 @@ Live Discovery
 
 .. DANGER:: Hierfür ist es notwendig, dass in Discord **kein personalisierter Status** gesetzt ist und bei der Streamerin in Discord der **lila Punkt** zu sehen ist.
 
-**CouchBot kann Personen, die in deinem Discord Server sind und auf **Twitch** streamen **automatisch zu erkennen.**
+**CouchBot** kann Personen, die in deinem Discord Server sind und auf **Twitch** streamen **automatisch zu erkennen.**
 Das wird anhand des lila "*Streaming*" Indikators ermöglicht, der beim Profil einer Person aufscheint, wenn diese mittels OBS oder anderer Software streamed und den *Streamer Modus* aktiviert hat.
 
 Die folgende Tabelle zeigt die Befehle die notwendig sind, um diese Funktion sofort in deinem Server nutzen zu können:
@@ -78,7 +78,6 @@ Das ist besonders in den Servern von Content Creators nützlich, die nur ihre ei
 Nähere Informationen zu individualisierten Benachrichtigungen findest du unter :ref:`Individuelle Benachrichtigungen <customannouncements>`
 
 .. Important:: Um einen Content Creator zu entfernen führe den Befehl ein zweites Mal aus.
-To remove a creator, run the command again!
 
 .. list-table:: Manual Twitch Setup
    :widths: 25 25 50
