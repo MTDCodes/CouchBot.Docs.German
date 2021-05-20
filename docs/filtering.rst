@@ -24,6 +24,6 @@ Würde beispielsweise jemand Destiny 2 spielen würden diese Streams im folgende
      - ``!cb filter title twitch "World of*"``
      - Erstellt auf Twitch einen **Stream Titel Filter** für alle Titel die mit "World of" beginnen.
    * - filter list
-     - ``!cb filter list``
-     - Zeigt eine Liste aller aktuell aktiven Filter an.
+     - ``!cb filter list [page #]``
+     - Zeigt eine Liste aller aktuell aktiven Filter an. Page # ist optional, der Standardwert ist 1.
 	 
