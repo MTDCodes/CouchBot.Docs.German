@@ -26,8 +26,8 @@ Nur Personen, die in der **Admin Liste** sind können Content Creators manuell z
      - ``!cb admin @Developers``
      - Fügt eine Rolle als Admin hinzu.
    * - admin list
-     - ``!cb admin list``
-     - Zeigt eine Liste der Bot Admins an.
+     - ``!cb admin list [page #]``
+     - Zeigt eine Liste der Bot Admins an. Zeigt eine Liste der bot Admins an. Page # ist optional, der Standardwert ist 1.
 
 ----------------
 Erlaubte Einstellungen
