@@ -1,7 +1,7 @@
 .. _gameteam:
 
 ==============
-Spiele & Teams
+spiele & Teams
 ==============
 
 .. note:: All diese Befehle sind ein/aus Schalter. Wenn du eine Person/eine Gruppe von der Liste entfernen möchtest führe einfach den entsprechenden Befehl ein zweites Mal aus.
@@ -21,8 +21,8 @@ Wenn du ein Spiele-Entwickler bist oder Benachrichtigungen für ein Spiel aktivi
      - ``!cb game "Last Epoch" #discord-channel``
      - Fügt ein Spiel der Spieleliste hinzu.
    * - game list
-     - ``!cb game list``
-     - Zeigt die Liste der hinzugefügten Spiele an.
+     - ``!cb game list [page #]``
+     - Zeigt die Liste der hinzugefügten Spiele an. Page # ist optional, der Standardwert ist 1.
 
 
 Wenn du zu einem Team gehörst oder Benachrichtigungen für ein Team aktivieren möchtest benutz die folgenden Einstellungen:
@@ -39,5 +39,5 @@ Als Beispiel wird hier der **sutv** Team Channel auf Twitch verwendet.
      - ``!cb team twitch sutv #discord-channel``
      - Fügt ein Team der Teamliste hinzu.
    * - team list
-     - ``!cb team list``
-     - Zeigt die Liste der hinzugefügten Teams an.
+     - ``!cb team list [page #]``
+     - Zeigt die Liste der hinzugefügten Teams an. Page # ist optional, der Standardwert ist 1.
