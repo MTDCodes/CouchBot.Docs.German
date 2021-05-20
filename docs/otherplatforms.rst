@@ -4,113 +4,113 @@
 Other Platforms
 ===============
 
-.. caution:: Please ensure you have read through the :ref:`Basic Config <basicconfig>` before moving to this section
-             This avoids issues such as the bot not announcing anyone.
+.. caution:: Stelle bitte sicher, dass du die :ref:`Grundlegende Konfiguration <basicconfig>` gelesen hast, bevor du mit diesem Abschnitt weitermachst.
+             Damit kannst du verhindern, dass der Bot beispielsweise keine Stream-Benachrichtigungen ankündigt.
 
-Whilst the main platforms of Twitch and YouTube have dominated the market, there are other platforms that cater to more specialist
-topics and subjects and as we are able, we will add them to our supported platform list.
+Auch wenn Twitch und YouTube als die größten Plattformen den Markt dominieren gibt es andere Plattformen, die sich auf bestimmte Themen
+und Fachgebiete spezialisiert haben. Soweit möglich werden wir diese Plattformen zur Liste unserer unterstützen Plattformen hinzufügen.
 
-.. Important:: To remove a creator, run the command again!
+.. Important:: Um eine Content Creatorin zu entfernen führe den Befehl ein zweites Mal aus.
 
 -------
 Picarto
 -------
 
-Catering almost exclusively to artists, Picarto found a market that it could build from and has a loyal viewerbase and streamers that love being there.
+Beinahe ausschließlich auf Künstler zugeschnitten hat Picarto einen Markt gefunden, in dem es wachsen konnte und eine loyale Streamer- und Zuschauerschar die diese Plattform liebt.
 
-.. list-table:: Picarto Commands
+.. list-table:: Picarto Befehle
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - picarto
      - ``!cb picarto MattTheDev #discord-channel``
-     - Adds a creator to your list to announce when Live.
+     - Fügt eine Content Creatorin zur Liste der Userinnen hinzu, deren Live Streams angekündigt werden sollen.
 
 --------
 Mobcrush
 --------
 
-Catering almost exclusively to mobile gaming, Mobcrush found a market that it could build from and has a loyal viewerbase and streamers that love being there.
+Beinahe ausschließlich auf Mobile Gaming zugeschnitten hat Mobcrush einen Markt gefunden, in dem es wachsen konnte und eine loyale Streamer- und Zuschauerschar die diese Plattform liebt.
 
-.. list-table:: Mobcrush Commands
+.. list-table:: Mobcrush Befehle
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - mobcrush
      - ``!cb mobcrush MattTheDev #discord-channel``
-     - Adds a creator to your list to announce when Live.
+     - Fügt einen Content Creator zur Liste der User hinzu, deren Live Streams angekündigt werden sollen.
 
 ------
 Piczel
 ------
 
-An art streaming website with free multistreams, free recordings and timelapses, an art gallery and more.
+Eine Website für Kunst Streams mit kostenlosen Multistreems, kostenlosen Aufnahmen und Zeitraffern, einer Kunstgallerie und mehr.
 
-.. list-table:: Piczel Commands
+.. list-table:: Piczel Befehle
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - piczel
      - ``!cb piczel MattTheDev #discord-channel``
-     - Adds a creator to your list to announce when Live.
+     - Fügt einen Content Creator zur Liste der User hinzu, deren Live Streams angekündigt werden sollen.
 
 -----
 Trovo
 -----
 
-Trovo is an interactive live streaming platform, live since March 2020.
+Trovo ist eine interaktive Live Streaming Plattform die seit März 2020 live ist.
 
-.. list-table:: Trovo Commands
+.. list-table:: Trovo Befehle
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - trovo
      - ``!cb trovo MattTheDev #discord-channel``
-     - Adds a creator to your list to announce when Live.
+     - Fügt eine Content Creatorin zur Liste der Userinnen hinzu, deren Live Streams angekündigt werden sollen.
 
 -------
 Glimesh
 -------
 
-Glimesh is a next generation streaming platform built by the community, for the community.
+Gilmesh ist eine "next generation" Streaming Plattform die von der Community für die Community gemacht wurde.
 
-.. list-table:: Glimesh Commands
+.. list-table:: Glimesh Befehle
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - glimesh
      - ``!cb glimesh MattTheDev #discord-channel``
-     - Adds a creator to your list to announce when Live.
+     - Fügt einen Content Creator zur Liste der User hinzu, deren Live Streams angekündigt werden sollen.
 
 --------
 Theta.tv
 --------
 
-Theta.tv is the next generation Esports entertainment platform on blockchain which features 24/7 live streaming
-content from top games like Fortnite, League of Legends, CSGO, and more.
+Theta.tv ist die "next generation" E-Sports Unterhaltungs-Plattform auf Blockchain die 24/7 Live Streams von
+Top-Spielen wie Fortnite, League of Legends, CSGO und mehr anbietet.
 
-.. list-table:: Theta.tv Commands
+.. list-table:: Theta.tv Befehle
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - theta
      - ``!cb theta MattTheDev #discord-channel``
-     - Adds a creator to your list to announce when Live.
+     - Fügt eine Content Creatorin zur Liste der Userinnen hinzu, deren Live Streams angekündigt werden sollen.
