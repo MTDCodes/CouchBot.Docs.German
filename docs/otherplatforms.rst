@@ -1,8 +1,8 @@
 .. _platforms:
 
-===============
-Other Platforms
-===============
+==================
+Andere Plattformen
+==================
 
 .. caution:: Stelle bitte sicher, dass du die :ref:`Grundlegende Konfiguration <basicconfig>` gelesen hast, bevor du mit diesem Abschnitt weitermachst.
              Damit kannst du verhindern, dass der Bot beispielsweise keine Stream-Benachrichtigungen ankündigt.
