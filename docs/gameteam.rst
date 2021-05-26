@@ -1,7 +1,7 @@
 .. _gameteam:
 
 ==============
-spiele & Teams
+Spiele & Teams
 ==============
 
 .. note:: All diese Befehle sind ein/aus Schalter. Wenn du eine Person/eine Gruppe von der Liste entfernen möchtest führe einfach den entsprechenden Befehl ein zweites Mal aus.
