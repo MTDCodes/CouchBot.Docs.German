@@ -1,63 +1,63 @@
 .. _rolemanagement:
 
-================
-Role Assignment
-================
+===============
+Rollenzuweisung
+===============
 
-**CouchBot** is capible of assigning roles based on specific criteria such as a user joining the server or typing a phrase in Discord.
-This provides opportunities such as typing "*I Love Streams*" to get pinged when a creator goes live etc.
+**CouchBot** ist in der Lage Rollen basierend auf verschiedenen Kriterien zuzuweisen. Beispiele dafür wären etwa, dass eine Userin dem Server beitritt oder einen Befehl in Discord eingibt.
+So können beispielsweise Benachrichtigungen wenn Content Creators live gehen erhalten werden, indem man "*Ich liebe Streams*" als Befehl verwendet.
 
-.. caution:: If you are assigning roles, make sure the bot is above the role it is supposed to assign.
+.. caution:: Wenn du Rollen zuweisen möchtest stelle sicher, dass der Bot eine höhere Rolle in Discord hat als die Rolle, die er vergeben soll.
 
-If you want Discord users to be assigned a role when they join your Discord server then the following commands will do this for you.
+Wenn du möchtest, dass Usern eine Rolle zugewiesen wird wenn sie deinem Discord Server beitreten dann benutze die folgenden Befehle:
 
-.. list-table:: Server Join Commands
+.. list-table:: Server Beitritts Befehle
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - role join 
      - ``!cb role join @RoleName``
-     - Assigns a role when people join your server.
+     - Weist eine Rolle zu wenn Userinnen deinem Server beitreten.
    * - role join reset 
      - ``!cb role join reset``
-     - Reset the server join role to nothing.
+     - Resetted die Server Beitrittsrolle zurück zu nichts.
 
-For a typed phrase to assign roles that can be done by the users themselves, see below;
+Damit Userinnen einen bestimmten Ausdruck im Chat verwenden können, um sich selbst Rollen zuzuweisen, gehe wie folgt vor:
 
-.. list-table:: Phrase Role Commands
+.. list-table:: Chat Ausdruck Befehle
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - role add 
      - ``!cb role add "CouchMe" [add/remove] @RoleTheyGet``
-     - Adds/Removes a role when someone types "**CouchMe**"
+     - Fügt eine Rolle hinzu (add)/Entfernt eine Rolle (remove) wenn jemand "**CouchMe**" eintippt
    * - role remove 
      - ``!cb role remove "CouchMe"`` 
-     - Removes the *command* "CouchMe"
+     - Entfernt den "CouchMe" Befehl.
 
-Reaction Roles are also available to use should you find that easier to implement on your server;
+Es können auch Rollen basierend auf Reaktionen hinzugefügt werden, wenn du das bevorzugst oder einfacher zu implementieren findest:
 
-.. Note:: This can scale up to a maximum or **FOUR** reaction roles.
+.. Note:: Eine *einzelne* Reaktions-Nachricht kann bis zu **vier** Reaktions-Rollen beinhalten. Solltest du mehr als 4 Rollen benötigen verfasse bitte weitere Reaktions-Nachrichten.
 
-.. list-table:: Reaction Role Commands
+.. list-table:: Reaktions Rollen Befehle
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - rm 
      - ``!cb rm @Streamer :thumbsup: Please react to get the Streamer role!``
-     - Adds/Removes a role when someone adds a reaction to the :thumbsup: emoji."
+     - Fügt eine Rolle hinzu oder entfernt sie wenn jemand mit dem :thumbsup: Emoji reagiert."
    * - rm 
      - ``!cb rm @Streamer :thumbsup: @Announcements :loudspeaker: Please react to get the desired role!``
-     - Adds/Removes a role when someone adds a reaction to the :thumbsup: emoji."
+     - Fügt eine Rolle hinzu oder entfernt sie wenn jemand mit dem :thumbsup: und/oder :loudspeaker: Emoji reagiert."
 
-The final role option available is tied to Twitch only and assigns the person who is live an additional role **only when they are live.**
-Please see :ref:`Twitch Info <twitch>` for further information on this role.
+Dle letzte verfügbare Rollen Option funktioniert nur in Verbindung mit Twitch und fügt einer Person die gerade live ist eine spezielle Rolle **für den Zeitraum des Livestreams** hinzu.
+Nähere Informationen zu dieser Rolle findest du in der :ref:`Twitch Info <twitch>`.
