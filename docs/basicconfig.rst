@@ -27,7 +27,7 @@ Nur Personen, die in der **Admin Liste** sind können Content Creators manuell z
      - Fügt eine Rolle als Admin hinzu.
    * - admin list
      - ``!cb admin list [page #]``
-     - Zeigt eine Liste der Bot Admins an. Zeigt eine Liste der bot Admins an. Page # ist optional, der Standardwert ist 1.
+     - Zeigt eine Liste der Bot Admins an. Page # ist optional, der Standardwert ist 1.
 
 ----------------
 Erlaubte Einstellungen
@@ -35,15 +35,15 @@ Erlaubte Einstellungen
 
 Um den Bot effektiv verwenden zu können musst du ihm mitteilen, was genau er tun soll. Beispiele dafür wären etwa veröffentlichte Videos anzukündigen oder neue Leute, die deinem Server beitreten, zu begrüßen. Einige dieser Einstellungen, wie beispielsweise der **Allow Live/Published** Befehl, sind notwendig, damit andere Teile des Bots funktionieren.
 
-~~~~~~~~~~~~~~~~
-Live & Published
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Live Streaming & Veröffentlichte Videos
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. Caution:: Wenn nicht zumindest eine dieser Einstellungen aktiviert wird, wird der Bot garnichts ankündigen.
 
 Die folgenden Befehle konfigurieren, ob der Bot live und / oder veröffentlichten Content ankündigen soll. Wenn du nicht zumindest eine dieser Einstellungen aktivierst wird der Bot keine Ankündigungen posten.
 
-.. note:: Die folgenden Variablen sind sowohl in Nachrichten für **live** und **veröffentlichte** Benachrichtigungen verfügbar:
+.. note:: Die folgenden Variablen sind sowohl in Nachrichten für **live** und **veröffentlichte** Content verfügbar:
 .. code-block:: none
 
     %TITLE% - Name des Streams
@@ -51,7 +51,7 @@ Die folgenden Befehle konfigurieren, ob der Bot live und / oder veröffentlichte
     %CHANNEL% - Name des Kanals
     %URL% - Vollständige URL des Streams
 
-.. list-table:: Live
+.. list-table:: Live Streaming
    :widths: 25 25 50
    :header-rows: 1
 
@@ -65,7 +65,7 @@ Die folgenden Befehle konfigurieren, ob der Bot live und / oder veröffentlichte
      - ``!cb message live "Deine individuelle live Benachrichtigung."``
      - Legt die standard live Benachrichtigung für den Server fest.
 
-.. list-table:: Published
+.. list-table:: Veröffentlichte Videos
    :widths: 25 25 50
    :header-rows: 1
 
