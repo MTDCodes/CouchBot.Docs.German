@@ -1,168 +1,166 @@
 .. _utility:
 
-=========
-Utilities
-=========
+==========
+Nützliches
+==========
 
----------------
-Custom Commands
----------------
+--------------------
+Individuelle Befehle
+--------------------
 
-Custom commands allow a versatile way for you to have the bot respond to different terms.
-This could be used to advertise your Twitter, display your Discord invite or have the bot ping someone!
+Individuelle Befehle erlauben dem Bot auf vielseitige Art auf unterschiedliche Dinge zu reagieren.
+So kannst du beispielsweise deinen Twitter Account bewerben, deine Discord Einladung anzeigen lassen oder den Bot jemanden pingen lassen!
 
-.. list-table:: Custom Commands
+.. list-table:: Individuelle Befehle
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - command add
      - ``!cb command add "CouchMe" 5 "You have been Couched!"``
-     - Creates a command called ``CouchMe`` with a 5 second cooldown that replies *"You have been Couched!"*
+     - Erstellt einen Befehl ``CouchMe`` mit einem Cooldown von 5 Sekunden der als Antwort *"You have been Couched!"* ausgibt.
    * - command remove
      - ``!cb command remove "CouchMe"`` 
-     - Removes the command, in this instance ``CouchMe``.
+     - Entfernt einen Befehl, in diesem Fall ``CouchMe``.
    * - command list
      - ``!cb command list``
-     - Displays a list of the current commands you have programmed.
-
+     - Zeigt die Liste der hinzugefügten Befehle an. Page # ist optional, der Standardwert ist 1.
+	 
 ----------
 Moderation
 ----------
 
-This provides basic moderation actions that can be used via the bot;
+Diese Befehle erlauben grundlegende Moderationsaktionen via CouchBot:
 
-.. list-table:: Moderation Commands
+.. list-table:: Moderations Befehle
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - kick
      - ``!cb kick @MattTheDev#0001``
-     - Kicks the user from the server.
+     - Kickt eine Userin vom Server.
    * - ban
      - ``!cb ban @MattTheDev#0001``
-     - Bans the user from the server.
+     - Verbannt einen User vom Server.
    * - echo
      - ``!cb echo Matt is Great!``
-     - Gets the CouchBot to repeat the text you specify.
+     - Lässt CouchBot den von dir angegebenen Text wiederholen.
 
---------------------
-Random Announcements
---------------------
+----------------------------
+Zufällige Benachrichtigungen
+----------------------------
 
-Ever wanted to put a random stream in a channel? Of course you did and now you can!
+Wolltest du schon einmal einen zufälligen Stream in einem Kanal ankündigen? Natürlich wolltest du - und jetzt kannst du das!
 
 .. list-table::
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - announce random 
      - ``!cb announce random twitch``
-     - Will announce a random stream in the channel you type it in (**Admin Only**)
-   * - dm random
+     - Erstellt eine Benachrichtigung für einen zufälligen Stream in dem Kanal, in dem der Befehl ausgeführt wird. (**Nur Admins**)
+	    * - dm random
      - ``!cb dm random twitch``
-     - Will DM a random stream to the user that ran the command.
+     - Schickt dem User, der den Befehl ausführt, einen zufälligen Stream als DM.
 
--------------
-Misc Commands
--------------
+----------------
+Sonstige Befehle
+----------------
 
-Use the following commands to configure and view various other bits and bobs.
+Mit den folgenden Befehlen kannst du verschiedene andere Kleinigkeiten einstellen oder anzeigen lassen.
 
 .. list-table::
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - info 
      - ``!cb info``
-     - Brief stats overview of the bot.
+     - Übersicht über verschiedene Statistiken des Bots.
    * - invite
      - ``!cb invite``
-     - Sends you a message with the bot invite.
+     - Schickt dir eine Nachricht mit einem Einladungs-Link für den Bot.
    * - ytidlookup 
      - ``!cb ytidlookup "Channel Name"``
-     - Tries to locate the channel ID for YouTube.
-   * - whatsthis
-     - ``!cb whatsthis``
-     - Give a link to an image to find out.
+     - Versucht die Kanal ID für YouTube zu ermitteln.
    * - config list 
      - ``!cb config list``
-     - Gives a link to the bots configuration.
+     - Zeigt die Konfiguration des Bots an.
    * - config deleteoffline
      - ``!cb config deleteoffline``
-     - Deletes offline streams.
+     - Löscht Benachrichtigungen von Streams, die Offline gegangen sind.
    * - config textannouncements
      - ``!cb config textannouncements``
-     - Announces in text rather than embeds
+     - Benachrichtigungen werden als Text und nicht als eingebettete Nachrichten angezeigt.
    * - clap 
      - ``!cb clap place your text here``
-     - Places a clap in all the spaces.
+     - Fügt ein :clap: Emoji zwischen jedes Wort der Nachricht ein.
    * - cookie
      - ``!cb cookie place your text here``
-     - Places a cookie in all the spaces.
+     - Fügt ein :cookie: Emoji zwischen jedes Wort der Nachricht ein.
    * - clone
      - ``!cb clone #ChannelClone All notifications go in here.``
-     - You can use this command to clone a channel and pin the message you specify.
+     - Mit diesem Befehl kannst du einen Kanal klonen und die angegebene Nachricht anpinnen.
    * - prefix
      - ``!cb prefix -``
-     - Using the command like this will change your prefix to ``-``
+     - Dieser Befehl ändert den Präfix des Bots auf ``-``.
 
 -----------------------
-Purge (Delete) Messages
+Löschen von Nachrichten
 -----------------------
 
-Sometimes you may wish to clear channels, messages or just messages from specific people to help in the effective
-moderation of you server. To accomplish this you can use the following commands.
+Manchmal kann es vorkommen, dass du sämtliche Nachrichten in einem Kanal, eine bestimmte Anzahl an Nachrichten
+oder Nachrichten von bestimmten Usern löschen möchtest um deinen Server effektiv zu moderieren. Das kannst du mit den
+folgenden Befehlen bewerkstelligen.
 
-.. Warning:: You must have **Manage Messages** permissions to run this command!
-			 Once run, you will be unable to restore deleted messages.
+.. Warning:: Du benötigst die **Nachrichten verwalten** Berechtigung, um diesen Befehl ausführen zu können!
+			 Einmal ausgeführt können die gelöschten Nachrichten nicht wiederhergestellt werden.
 
 .. list-table::
    :widths: 25 25 50
    :header-rows: 1
 
    * - Name
-     - Example
-     - Usage
+     - Beispiel
+     - Verwendung
    * - purge 
      - ``!cb purge``
-     - Deletes 100 messages in the current channel.
+     - Löscht 100 Nachrichten im aktuellen Kanal.
    * - purge
      - ``!cb purge 25``
-     - This would purge 25 messages in the current channel.
+     - Löscht 25 Nachrichten im aktuellen Kanal.
    * - purge 
      - ``!cb purge 25 #DiscordChannel``
-     - This would purge 25 messages in the channel #DiscordChannel.
+     - Löscht 25 Nachrichten im Kanal #DiscordChannel. 
    * - purge
      - ``!cb purge 25 #DiscordChannel true``
-     - This would purge 25 messages in the channel #DiscordChannel including pinned messages.
+     - Löscht 25 Nachrichten im Kanal #DiscordChannel inklusive angepinnter Nachrichten.
    * - purge
      - ``!cb purge @MattTheDev``
-     - Deletes all messages from user within the last 100 messages in the current channel.
+     - Löscht in den letzten 100 Nachrichten im aktuellen Kanal alle Nachrichten der angegebenen Userin.
    * - purge
      - ``!cb purge @MattTheDev true``
-     - Deletes all messages from user within the last 100 messages in the current channel, including pinned messages.
+     - Löscht in den letzten 100 Nachrichten im aktuellen Kanal alle Nachrichten inklusive angepinnter Nachrichten des angegebenen Users.
    * - purge
      - ``!cb purge @MattTheDev #DiscordChannel``
-     - Deletes all messages from user within the last 100 messages in the current channel.
+     - Löscht in den letzten 100 Nachrichten im Kanal #DiscordChannel alle Nachrichten des angegebenen Users.
    * - purge
      - ``!cb purge @MattTheDev #DiscordChannel true``
-     - Deletes all messages from user within the last 100 messages in the current channel, including pinned messages.
+     - Löscht in den letzten 100 Nachrichten im Kanal #DiscordChannel alle Nachrichten inklusive angepinnter Nachrichten der angegebenen Userin.
 
-.. Warning:: The following commands have no confirmation and will execute when run.
+.. Warning:: Die folgenden Befehle haben keine Bestätigung und werden nach Aufruf ausgeführt.
 
-.. list-table:: Creator Purge
+.. list-table:: Löschen von Content Creators
    :widths: 25 25 50
    :header-rows: 1
 
@@ -171,7 +169,7 @@ moderation of you server. To accomplish this you can use the following commands.
      - Usage
    * - creators purge 
      - ``!cb creators purge``
-     - Removes all manually added creators from announcing.
+     - Entfernt die Benachrichtigungen für alle manuell hinzugefügten Content Creators.
    * - creators purge 
      - ``!cb creators purge twitch``
-     - Removes all manually added creators on Twitch from announcing, works for all platforms.
+     - Entfernt die Benachrichtigungen für alle manuell hinzugefügten Twitch Content Creators.
