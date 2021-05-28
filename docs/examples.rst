@@ -1,43 +1,44 @@
 .. _examples:
 
-=============
-Example Setup
-=============
+===============
+Setup Beispiele
+===============
 
-In these scenarios, we have already followed the :ref:`Basic Configuration <basicconfig>` and have the correct :ref:`Permission <troubleshooting>` structure.
-We will use ``MattTheDev`` as the streamer account and ``#notification`` as the Discord channel to announce in.
+In diesen Szenarios haben wir die :ref:`Grundlegende Konfiguration <basicconfig>` bereits durchgeführt und dem Bot die benötigten :ref:`Berechtigungen <troubleshooting>` gegeben.
+Wir werden ``MatttheDev`` als Streamer Account und ``#notification`` als den zu verwendenden Discord Kanal verwenden.
 
 -----------
-Scenario 1
+Szenario 1
 -----------
 
-.. admonition:: Scenario 1
+.. admonition:: Szenario 1
 
-   Announcing only the Server Owner going **Live** with an everyone ping.
+   Das **live** Gehen des Serverbesitzers mit einer Benachrichtigung an alle User des Servers ankündigen.
 
-A lot of people just want a bot to announce them going live. CouchBot can do this!
-We start by allowing the bot to announce live streams then adding our creator.
-We then tell the bot to ping the everyone role and allow it to do so.
+
+Viele Leute wollen einfach nur, dass der Bot ankündigt, wenn sie live gehen. CouchBot kann das natürlich!
+Wir geben dem Bot zunächst die Berechtigungen live Streams anzukündigen und fügen anschließend den Content Creator hinzu.
+Dann sagen wir dem Bot dass er die everyone Rolle pingen soll.
 
 .. code-block:: none
 
     !cb allow live
-    !cb twitch MattTheDev #notification "The Dev is going live @everyone"
+    !cb twitch MattTheDev #notification "Der Dev ist jetzt live @everyone"
 
 -----------
-Scenario 2
+Szenario 2
 -----------
 
-.. admonition:: Scenario 2
+.. admonition:: Szenario 2
 
-   Announcing people automatically without adding individually.
+   Streams automatisch ankündigen ohne Content Creatorinnen individuell hinzuzufügen.
 
-Rather than adding people manually one by one, you can have the bot automatically pick up people in your server.
-This drastically reduces the setup time and eases the setup process for you.
-First, you allow the bot to push live announcements then set the default channel.
-Then tell it to find anyone with the streaming status and your done!
+Anstatt Personen einzeln manuell hinzuzufügen kann der Bot auch automatisch erkennen wenn User deines Servers live gehen.
+Das reduziert die Zeit für das Einrichten drastisch und macht den Setup Prozess für dich weit einfacher.
+Zunächst erlaubst du dem Bot live Benachrichtigungen zu posten und legst anschließend den Standard-Kanal für diese Benachrichtigungen fest.
+Dann lässt du den Bot nach Userinnen mit dem Streaming Status Ausschau halten und bist auch schon fertig!
 
-.. caution:: The streamer has to have the status "Streaming" to be automatically announced.
+.. caution:: Der Streamer muss den Discord Status "Streaming" haben um automatisch angekündigt zu werden.
 
 .. code-block:: none
 
@@ -46,18 +47,18 @@ Then tell it to find anyone with the streaming status and your done!
     !cb allow livediscovery all
 
 -----------
-Scenario 3
+Szenario 3
 -----------
 
-.. admonition:: Scenario 3
+.. admonition:: Szenario 3
 
-   Automatically announce a specific role going live
+   Live Streams einer bestimmten Benutzerrolle automatisch ankündigen.
 
-Let's say you want anyone with the role VIP to be automatically announced. To do this, you would allow
-the bot to push Live and tell it the channel it should be posting in.
-All that's left to do is tell it what role it should announce as live!
+Gehen wir davon aus dass du nur live Streams von Userinnen mit der VIP Rolle ankündigen lassen möchtest. Um dies zu bewerkstelligen
+erlaubst du dem Bot zunächst, live Benachrichtigungen zu posten und definierst den Kanal in dem er posten soll.
+Anschließend musst du ihm nur noch sagen welche Rolle angekündigt werden soll!
 
-.. caution:: The streamer has to have the status "Streaming" to be automatically announced.
+.. caution:: Die Streamerin muss den Discord Status "Streaming" haben um automatisch angekündigt zu werden.
 
 .. code-block:: none
 
@@ -66,15 +67,15 @@ All that's left to do is tell it what role it should announce as live!
     !cb allow livediscovery role @VIP
 
 -----------
-Scenario 4
+Szenario 4
 -----------
 
-.. admonition:: Scenario 4
+.. admonition:: Szenario 4
 
-   Owner announced separately from anyone else
+   Der Serverbesitzer soll separat von anderen Streamern angekündigt werden.
 
-Some servers may with to have the owner or other "VIP" types announced seperatly from the rest.
-To accomplish this we allow live then add the streamers as needed specifiying the channel they should be announced in.
+Manche Server möchten eventuell den Besitzer oder andere "VIPs" separat von anderen Usern ankündigen lassen.
+Dafür erlauben wir CouchBot zunächst live Benachrichtigungen zu posten und fügen dann die Streamer einzeln mit dem jeweils spezifischen Kanal hinzu, in dem die Ankündigungen gepostet werden sollen.
 
 .. code-block:: none
 
@@ -83,17 +84,16 @@ To accomplish this we allow live then add the streamers as needed specifiying th
     !cb twitch Jaymei #otherchannel
 
 -----------
-Scenario 5
+Szenario 5
 -----------
 
-.. admonition:: Scenario 5
+.. admonition:: Szenario 5
 
-   YouTube VOD and Live announcements to different channels
+   Benachrichtigungen für YouTube VODs und Live Streams in unterschiedlichen Kanälen
 
-We start by allowing the bot to push both live and published content. As the commands are a toggle it will respond with the new setting.
-We then add the youtube channel using it's "ChannelID_" and specify the channel it should post to along with whether we want it to be 
-**Live** or **VOD**.
-It is also possible to leave blank for them to go the the same channel or use the argument "both".
+Zunächst erlauben wir dem Bot sowohl Benachrichtigungen für live als auch für veröffentlichten Content zu posten. Da die Befehle dafür ein/aus Schalter sind wird als Antwort die neue, jetzt gültige Einstellung geliefert.
+Anschließend fügen wir den YouTube Kanal mittels der dazugehörigen "ChannelID_" sowie den jeweiligen Kanal, in dem die Benachrichtigungen für live und veröffentlichten Content gepostet werden sollen hinzu.
+Es ist auch möglich diesen Teil leer zu lassen oder das Argument "both" zu verwenden, damit beide Benachrichtigungen in den selben Kanal gepostet werden.
 
 .. _ChannelID: https://youtube.com/account_advanced
 
@@ -105,34 +105,34 @@ It is also possible to leave blank for them to go the the same channel or use th
     !cb youtube UC123456 #publishedchannel vod
 
 -----------
-Scenario 6
+Szenario 6
 -----------
 
-.. admonition:: Scenario 6
+.. admonition:: Szenario 6
 
-   Owner announced separately from anyone else mentioning different groups with custom messages.
+   Der Serverbesitzer soll separat von anderen Streamern angekündigt werden und unterschiedliche Gruppen werden mit individuellen Nachrichten benachrichtigt.
 
-You want to notify @everyone when you go live. You want to notify @Streamer when others go live.
-The third command would use the default live announcement message.
+Du möchtest @everyone benachrichtigen wenn du live gehst. Du möchtest @Streamer benachrichtigen, wenn andere Personen live gehen.
+Der dritte Befehl würde die Standard Benachrichtigung für live Streams verwenden.
 
 .. code-block:: none
 
-    !cb twitch MattTheDev #BigNotification "@everyone CouchBot creator **MattTheDev** is now online!"
-    !cb twitch Jaymei #notification "@Streamer Another custom message!"
+    !cb twitch MattTheDev #BigNotification "@everyone CouchBot Programmierer **MattTheDev** ist jetzt online!"
+    !cb twitch Jaymei #notification "@Streamer Eine weitere individuelle Nachricht!"
     !cb twitch EmElle #notification
 
---------
-Messages
---------
+-----------
+Nachrichten
+-----------
 
-You may wish to configure some custom messages with **CouchBot** to let your server know your
-live or maybe just to greet a new user. The following commands will show you how!
+Vielleicht möchtest du ja eine individuelle Nachricht erstellen um die Leute mit **CouchBot** wissen zu lassen,
+dass du live bist oder um neue Servermitglieder zu begrüßen. Die folgenden Befehle zeigen dir wie!
 
-.. admonition:: Scenario 1
+.. admonition:: Szenario 1
 
-   Setup hello and goodbye messages
+   Begrüßungs- und Verabschiedungs-Nachrichten einstellen
 
-.. note:: You can use the arguments **%USER%** and **%RANDOMUSER%**
+.. note:: Du kannst die Argumente **%USER%** und **%RANDOMUSER%** verwenden.
 
 .. code-block:: none
 
@@ -140,19 +140,19 @@ live or maybe just to greet a new user. The following commands will show you how
     !cb allow goodbyes
     !cb channel greetings #channel-name
     !cb channel goodbyes #channel-name
-    !cb message greeting "Your Custom Greeting Message"
-    !cb message goodbye "Your Custom Goodbye Message"
+    !cb message greeting "Deine individuelle Begrüßungs-Nachricht."
+    !cb message goodbye "Deine individuelle Verabschiedungs-Nachricht"
 
-.. admonition:: Scenario 2
+.. admonition:: Szenario 2
 
-   Custom going live message
+   Benuzerdefinierte live Benachrichtigungen.
 
-So you feel like putting something a bit more personable in the messages for your server?
-You can use the following;
+Du möchtest den Benachrichtigungen in deinem Server einen persönlichen Touch hinzufügen?
+Hier wird dir geholfen:
 
-.. note:: You can use the arguments **%TITLE%, %GAME%, %CHANNEL% or %URL%**
+.. note:: Du kannst die Argumente **%TITLE%, %GAME%, %CHANNEL% und %URL%** verwenden.
 
 .. code-block:: none
 
-    !cb message live "Your Custom Live Message"	
-    !cb message published "Your Custom VOD Message"
+    !cb message live "Deine benutzerdefinierte live Benachrichtigung."	
+    !cb message published "Deine benutzerdefinierte VOD Benachrichtigung."
