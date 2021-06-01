@@ -1,79 +1,113 @@
 .. _messages:
 
-==============
-Advanced Messages Setup
-==============
+===================================
+Fortgeschrittenes Nachrichten Setup
+===================================
 
-.. caution:: If you are looking to setup messages per creator then follow the instructions in the :ref:`Custom Announcements <customannouncements>` section.
+.. caution:: Wenn du Benachrichtigungen für einzelne Content Creators hinzufügen möchtest, folge den Anweisungen im :ref:`Individuelle Benachrichtigungen <customannouncements>` Bereich.
 
-Use the following commands to configure custom message options and test them.
+Mit den folgenden Befehlen kannst du individuelle Benachrichtigungen konfigurieren und testen.
 
-.. note:: The following variables are available to use in the **Live** and **Published** messages.
+.. note:: Die folgenden Variablen sind sowohl in Nachrichten für **live** und **veröffenltichte** Benachrichtigungen verfügbar:
 .. code-block:: none
 
-    %TITLE% - Name of the Stream
-    %GAME% - Not working for YouTube
-    %CHANNEL% - Channel Name
-    %URL% - Full URL of the Stream
+    %TITLE% - Name des Streams
+    %GAME% - Funktioniert nicht für YouTube
+    %CHANNEL% - Name des Kanals
+    %URL% - Vollständige URL des Streams
 
-.. note:: The following variables are available to use in the **Greetings** and **Goodbye** messages.
+.. note:: Die folgenden Variablen sind sowohl in **Begrüßungs** als auch **Verabschiedungs** Nachrichten verfügbar:
 .. code-block:: none
 
     %USER%
     %RANDOMUSER%
 
-+-------------------+---------------------------------------------------------+-----------------------------------------------+
-| Name              | Example                                                 | Usage                                         |
-+-------------------+---------------------------------------------------------+-----------------------------------------------+
-| message live      | ``!cb message live "Your Custom Live Message"``         | Changes your live message for the server.     |
-+-------------------+---------------------------------------------------------+-----------------------------------------------+
-| message published | ``!cb message published "Your Custom VOD Message"``     | Changes your VOD message for the server.      |
-+-------------------+---------------------------------------------------------+-----------------------------------------------+
-| message offline   | ``!cb message offline "Your Custom Offline Message"``   | Changes your offline message for the server.  |
-+-------------------+---------------------------------------------------------+-----------------------------------------------+
-| message greeting  | ``!cb message greeting "Your Custom Greeting Message"`` | Changes your greeting message for the server. |
-+-------------------+---------------------------------------------------------+-----------------------------------------------+
-| message goodbye   | ``!cb message goodbye "Your Custom Goodbye Message"``   | Changes your goodbye message for the server.  |
-+-------------------+---------------------------------------------------------+-----------------------------------------------+
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
 
-If you want to reset your greetings and messages (or not change them) to the default ones, use the following commands;
+   * - Name
+     - Beispiel
+     - Verwendung
+   * - message live
+     - ``!cb message live "Deine individuelle live Benachrichtigung."``
+     - Legt die standard live Benachrichtigung für den Server fest.
+   * - message published
+     - ``!cb message published "Deine individuelle VOD Benachrichtigung."``
+     - Legt die standard VOD Benachrichtigung für den Server fest.
+   * - message offline
+     - ``!cb message offline "Deine individuelle offline Benachrichtigung."``
+     - Legt die offline Benachrichtigung für den Server fest.
+	 * - message greeting
+     - ``!cb message greeting "Deine individuelle Begrüßungs Nachricht."``
+     - Legt die Begrüßungs Nachricht für den Server fest.
+	 * - message goodbye
+     - ``!cb message goodbye "Deine individuelle Verabschiedungs Nachricht."``
+     - 	Legt die Verabschiedungs Nachricht für den Server fest.
 
-+--------------------+----------------------------------+--------------------------------------------------------+
-| Name               | Example                          | Usage                                                  |
-+--------------------+----------------------------------+--------------------------------------------------------+
-| message live       | ``!cb message live clear``       | Resets your live message for the server.               |
-+--------------------+----------------------------------+--------------------------------------------------------+
-| message published  | ``!cb message published clear``  | Resets your VOD message for the server.                |
-+--------------------+----------------------------------+--------------------------------------------------------+
-| message offline    | ``!cb message offline clear``    | Resets your offline message for the server.            |
-+--------------------+----------------------------------+--------------------------------------------------------+
-| message greeting   | ``!cb message greeting clear``   | Resets your greeting message for the server.           |
-+--------------------+----------------------------------+--------------------------------------------------------+
-| message goodbye    | ``!cb message goodbye clear``    | Resets your goodbye message for the server.            |
-+--------------------+----------------------------------+--------------------------------------------------------+
-| message offline    | ``!cb message offline ""``       | Leaves the original announcement post without changes. |
-+--------------------+----------------------------------+--------------------------------------------------------+
+Wenn du Begrüßungen oder andere Nachrichten auf die Standardwerte zurücksetzen möchtest benutze folgende Befehle:
 
-To have the message outside of the embed blank, use the following;
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
 
-+-------------------+---------------------------------+--------------------------------------------------------------+
-| Name              | Example                         | Usage                                                        |
-+-------------------+---------------------------------+--------------------------------------------------------------+
-| message live      | ``!cb message live empty``      | Remove message outside of embed on live stream announcement. |
-+-------------------+---------------------------------+--------------------------------------------------------------+
-| message published | ``!cb message published empty`` | Remove message outside of embed on published announcement.   |
-+-------------------+---------------------------------+--------------------------------------------------------------+
+   * - Name
+     - Beispiel
+     - Verwendung
+   * - message live
+     - ``!cb message live clear``
+     - Setzt die live Benachrichtigung des Servers auf den Standardwert zurück.
+   * - message published
+     - ``!cb message published clear``
+     - Setzt die VOD Benachrichtigung des Servers auf den Standardwert zurück.
+   * - message offline
+     - ``!cb message offline clear``
+     - Setzt die offline Benachrichtigung des Servers auf den Standardwert zurück.
+	 * - message greeting
+     - ``!cb message greeting clear``
+     - Setzt die Begrüßungs Nachricht des Servers auf den Standardwert zurück.
+	 * - message goodbye
+     - ``!cb message goodbye clear``
+     - Setzt die Verabschiedungs Nachricht des Servers auf den Standardwert zurück.
+	 * - message offline
+     - ``!cb message offline ""``
+     - Lässt die ursprüngliche Benachrichtigung ohne Veränderung bestehen.
 
-If you want to test your messages, use the following commands;
+Um die Nachrichten, die vor den eingebetten Nachrichten stehen, leer zu lassen, verwende folgende Befehle:
 
-+-------------------+----------------------------------------+----------------------------------------------+
-| Name              | Example                                | Usage                                        |
-+-------------------+----------------------------------------+----------------------------------------------+
-| test live         | ``!cb test live #DiscordChannel``      | Tests your live message for the server.      |
-+-------------------+----------------------------------------+----------------------------------------------+
-| test published    | ``!cb test published #DiscordChannel`` | Tests your VOD message for the server.       |
-+-------------------+----------------------------------------+----------------------------------------------+
-| test greeting     | ``!cb test greeting``                  | Tests your greeting message for the server.  |
-+-------------------+----------------------------------------+----------------------------------------------+
-| test goodbye      | ``!cb test goodbye``                   | Tests your goodbye message for the server.   |
-+-------------------+----------------------------------------+----------------------------------------------+
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Name
+     - Beispiel
+     - Verwendung
+   * - message live
+     - ``!cb message live empty``
+     - Entfernt Nachrichten außerhalb der eingebetteten live Benachrichtigungen.
+   * - message published
+     - ``!cb message published empty``
+     - Entfernt Nachrichten außerhalb der eingebetteten VOD Benachrichtigungen.
+
+Wenn du deine Benachrichtigungen testen möchtest verwende folgende Befehle:
+
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Name
+     - Beispiel
+     - Verwendung
+   * - test live
+     - ``!cb test live #DiscordChannel``
+     - Testet die live Benachrichtigung für deinen Server.
+   * - test published
+     - ``!cb test published #DiscordChannel``
+     - Testet die VOD Benachrichtigung für deinen Server.
+   * - test greeting
+     - ``!cb test greeting``
+     - Testet die Begrüßungs Nachricht für deinen Server.
+	 * - test goodbye
+     - ``!cb test goodbye``
+     - Testet die Verabschiedungs Nachricht für deinen Server.
+	 
