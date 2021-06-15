@@ -20,27 +20,27 @@ Mit den folgenden Befehlen kannst du individuelle Benachrichtigungen konfigurier
 .. code-block:: none
   
   %NEWLINE% - Neue Zeile einfügen.
-	%NICKNAME% - Spitzname der Person, die dem Server beigetreten ist. Falls kein Spitzname vergeben ist wird der Benutzername verwendet.
-	%RANDOMUSER% - Zufälliger Benutzername des Servers.
-	%SERVER% - Name des Servers.
-	%SERVERID% - ID des Servers.
-	%TIMESTAMPUTC% - Aktuelle Uhrzeit in UTC
-	%USER% - Benutzername der Person, die dem Server beigetreten ist.
-	%USERID% - Benutzer ID der Person, die dem Server beigetreten ist.
+  %NICKNAME% - Spitzname der Person, die dem Server beigetreten ist. Falls kein Spitzname vergeben ist wird der Benutzername verwendet.
+  %RANDOMUSER% - Zufälliger Benutzername des Servers.
+  %SERVER% - Name des Servers.
+  %SERVERID% - ID des Servers.
+  %TIMESTAMPUTC% - Aktuelle Uhrzeit in UTC
+  %USER% - Benutzername der Person, die dem Server beigetreten ist.
+  %USERID% - Benutzer ID der Person, die dem Server beigetreten ist.
 	
 .. note:: Die folgenden Variablen sind in **Verabschiedungs** Nachrichten verfügbar:
 .. code-block:: none
 
-	%HOWLONG% - Menschlich lesbare Verweildauer am Server, z.B.: 3 monate, 2 tage und 6 Stunden.
-	%JOINDATE% - Das Datum, an dem die verlassende Person dem Server ursprünglich beigetreten ist.
-	%NEWLINE% - Neue Zeile einfügen.
-	%NICKNAME% - Spitzname der Person, die den Server verlässt. Falls kein Spitzname vergeben ist wird der Benutzername verwendet.
-	%RANDOMUSER% - Zufälliger Benutzername des Servers.
-	%SERVER% - Name des Servers.
-	%SERVERID% - ID des Servers.
-	%TIMESTAMPUTC% - Aktuelle Uhrzeit in UTC
-	%USER% - Benutzername der Person, die den Server verlässt.
-	%USERID% - Benutzer ID der Person, die den Server verlässt.
+  %HOWLONG% - Menschlich lesbare Verweildauer am Server, z.B.: 3 monate, 2 tage und 6 Stunden.
+  %JOINDATE% - Das Datum, an dem die verlassende Person dem Server ursprünglich beigetreten ist.
+  %NEWLINE% - Neue Zeile einfügen.
+  %NICKNAME% - Spitzname der Person, die den Server verlässt. Falls kein Spitzname vergeben ist wird der Benutzername verwendet.
+  %RANDOMUSER% - Zufälliger Benutzername des Servers.
+  %SERVER% - Name des Servers.
+  %SERVERID% - ID des Servers.
+  %TIMESTAMPUTC% - Aktuelle Uhrzeit in UTC
+  %USER% - Benutzername der Person, die den Server verlässt.
+  %USERID% - Benutzer ID der Person, die den Server verlässt.
 
 .. list-table::
    :widths: 25 25 50
